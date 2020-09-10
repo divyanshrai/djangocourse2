@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404, render
 from .models import Choice, Question
 from django.urls import reverse
 from django.views import generic
+from django.http import HttpResponseRedirect
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
